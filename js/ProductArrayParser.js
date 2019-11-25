@@ -1,4 +1,4 @@
-var mainProducts = ["Test Product", "This is a test description.", "testImage.png", 150, 150, 200, 0, "Test Product 2", "This is a test description. 2", "testImage.png", 250, 250, 1000, 0];
+var mainProducts = ["Test Product", "This is a test description.", "testImage.png", 150, 150, 200, 0,"Test Product2", "This is a test description.2", "testImage.png", 200, 200, 500, 0];
 
 var arrayLength = mainProducts.length;
 var productAmmount = (arrayLength / 7);
