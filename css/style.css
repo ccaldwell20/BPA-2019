@@ -1,214 +1,93 @@
-<html > <head > <meta content="text/html; charset=UTF-8"http-equiv="content-type" > <style type="text/css" > ol {
-    margin: 0;
-    padding: 0
+#ecoHome {
+    position: absolute;
+    height: auto;
+    width: 15%;
+    right: 9%;
+    top: 30%;
 }
 
-table td,
-table th {
-    padding: 0
+#waterDrops {
+    position: absolute;
+    height: auto;
+    transform: rotate(-20deg);
+    width: 10%;
+    right: 3%;
+    top: 75%;
+
 }
 
-.c5 {
-    -webkit-text-decoration-skip: none;
-    color: #000000;
-    font-weight: 700;
-    text-decoration: underline;
-    vertical-align: baseline;
-    text-decoration-skip-ink: none;
-    font-size: 11pt;
-    font-family: "Arial";
-    font-style: normal
+#sun {
+    position: absolute;
+    height: auto;
+    width: 12%;
+    right: -2%;
+    top: 2%;
+    z-index: -10;
+    -webkit-filter: drop-shadow(0px 0px 8px rgba(40, 40, 40, 0.7));
+
 }
 
-.c1 {
-    color: #000000;
-    font-weight: 400;
-    text-decoration: none;
-    vertical-align: baseline;
-    font-size: 11pt;
-    font-family: "Arial";
-    font-style: normal
+#windmill {
+    position: absolute;
+    height: auto;
+    width: 12%;
+    right: -0.6%;
+    top: 37%;
+    -webkit-filter: drop-shadow(0px 0px 3px rgba(60, 60, 60, 0.7));
+
 }
 
-.c0 {
-    padding-top: 0pt;
-    padding-bottom: 0pt;
-    line-height: 1.15;
-    orphans: 2;
-    widows: 2;
-    text-align: left
+#backDrop {
+    position: absolute;
+    left: 72%;
+    top: -5%;
+    z-index: -50;
+    -webkit-filter: drop-shadow(0px 0px 8px rgba(40, 40, 40, 1));
 }
 
-.c4 {
-    background-color: #ffffff;
-    max-width: 468pt;
-    padding: 72pt 72pt 72pt 72pt
+#mainContent {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    border-radius: 25px;
+    width: 68%;
+
 }
 
-.c2 {
-    height: 11pt
+#mainContentII {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    border-radius: 25px;
+    position: absolute;
+    left: 1%;
+    top: 63%;
+    width: 68%;
+
 }
 
-.c3 {
-    margin-left: 180pt
-}
-
-.title {
-    padding-top: 0pt;
-    color: #000000;
-    font-size: 26pt;
-    padding-bottom: 3pt;
-    font-family: "Arial";
-    line-height: 1.15;
-    page-break-after: avoid;
-    orphans: 2;
-    widows: 2;
-    text-align: left
-}
-
-.subtitle {
-    padding-top: 0pt;
-    color: #666666;
-    font-size: 15pt;
-    padding-bottom: 16pt;
-    font-family: "Arial";
-    line-height: 1.15;
-    page-break-after: avoid;
-    orphans: 2;
-    widows: 2;
-    text-align: left
-}
-
-li {
-    color: #000000;
-    font-size: 11pt;
-    font-family: "Arial"
-}
-
-p {
-    margin: 0;
-    color: #000000;
-    font-size: 11pt;
-    font-family: "Arial"
-}
-
-h1 {
-    padding-top: 20pt;
-    color: #000000;
-    font-size: 20pt;
-    padding-bottom: 6pt;
-    font-family: "Arial";
-    line-height: 1.15;
-    page-break-after: avoid;
-    orphans: 2;
-    widows: 2;
-    text-align: left
-}
-
-h2 {
-    padding-top: 18pt;
-    color: #000000;
-    font-size: 16pt;
-    padding-bottom: 6pt;
-    font-family: "Arial";
-    line-height: 1.15;
-    page-break-after: avoid;
-    orphans: 2;
-    widows: 2;
-    text-align: left
-}
-
-h3 {
-    padding-top: 16pt;
-    color: #434343;
-    font-size: 14pt;
-    padding-bottom: 4pt;
-    font-family: "Arial";
-    line-height: 1.15;
-    page-break-after: avoid;
-    orphans: 2;
-    widows: 2;
-    text-align: left
-}
-
-h4 {
-    padding-top: 14pt;
-    color: #666666;
-    font-size: 12pt;
-    padding-bottom: 4pt;
-    font-family: "Arial";
-    line-height: 1.15;
-    page-break-after: avoid;
-    orphans: 2;
-    widows: 2;
-    text-align: left
-}
-
-h5 {
-    padding-top: 12pt;
-    color: #666666;
-    font-size: 11pt;
-    padding-bottom: 4pt;
-    font-family: "Arial";
-    line-height: 1.15;
-    page-break-after: avoid;
-    orphans: 2;
-    widows: 2;
-    text-align: left
-}
-
-h6 {
-    padding-top: 12pt;
-    color: #666666;
-    font-size: 11pt;
-    padding-bottom: 4pt;
-    font-family: "Arial";
-    line-height: 1.15;
-    page-break-after: avoid;
-    font-style: italic;
-    orphans: 2;
-    widows: 2;
-    text-align: left
-}
-
-</style > </head > <body class="c4" > <p class="c0 c3" > <span class="c5" > CSS</span > </p > <p class="c0 c2 c3" > <span class="c5" > </span > </p > <p class="c0 c2 c3" > <span class="c5" > </span > </p > <p class="c0 c2 c3" > <span class="c5" > </span > </p > <p class="c0 c2 c3" > <span class="c5" > </span > </p > <p class="c0" > <span class="c1" >
-/*Horizontal Scrollmenu*/
-</span > </p > <p class="c0 c2" > <span class="c1" > </span > </p > <p class="c0" > <span class="c1" > Div.scrollmenu</span > </p > <p class="c0" > <span class="c1" > &nbsp;
-
-    {
-    </span > </p > <p class="c0" > <span class="c1" > &nbsp;
-    background-color: #333;
-    </span > </p > <p class="c0" > <span class="c1" > &nbsp;
-    overflow: auto;
-    </span > </p > <p class="c0" > <span class="c1" > &nbsp;
-    white-space: nowrap;
-    </span > </p > <p class="c0" > <span class="c1" >
-}
-
-</span > </p > <p class="c0 c2" > <span class="c1" > </span > </p > <p class="c0" > <span class="c1" > div.scrollmenu a</span > </p > <p class="c0" > <span class="c1" > &nbsp;
-
-    {
-    </span > </p > <p class="c0" > <span class="c1" > &nbsp;
-    display: inline-block;
-    </span > </p > <p class="c0" > <span class="c1" > &nbsp;
-    color: white;
-    </span > </p > <p class="c0" > <span class="c1" > &nbsp;
+#mainContentTextTitle {
+    font-size: 200%;
     text-align: center;
-    </span > </p > <p class="c0" > <span class="c1" > &nbsp;
-    padding: 14px;
-    </span > </p > <p class="c0" > <span class="c1" > &nbsp;
-    text-decoration: none;
-    </span > </p > <p class="c0" > <span class="c1" >
+
 }
 
-</span > </p > <p class="c0 c2" > <span class="c1" > </span > </p > <p class="c0" > <span class="c1" > div.scrollmenu a:hover</span > </p > <p class="c0" > <span class="c1" > &nbsp;
+#mainContentTextTitleII {
+    font-size: 200%;
+    text-align: center;
 
-    {
-    </span > </p > <p class="c0" > <span class="c1" > &nbsp;
-    background-color: #777;
-    </span > </p > <p class="c0" > <span class="c1" >
 }
 
-</span > </p > <p class="c0 c2" > <span class="c1" > </span > </p > <p class="c0" > <span >
-/*Horizontal Scrollmenu*/
-</span > </p > </body > </html >
+#mainContentText {
+    text-align: center;
+
+}
+
+#mainContentTextII {
+    text-align: center;
+
+}

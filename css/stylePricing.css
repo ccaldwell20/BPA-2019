@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+.header {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+
+/* Container for flexboxes */
+.row {
+    display: -webkit-flex;
+    display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
+    height: 300px;
+    /* Should be removed. Only for demonstration */
+}
+
+/* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .row {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#bottomElipse {
+    height: 231px;
+    background-image: url('../img/pricingElipse/screen.png');
+    -webkit-filter: drop-shadow(0px 0px 10px rgba(40, 40, 40, 1));
+}
+
+#water {
+    padding-left: 255px;
+    padding-top: 65px;
+    -webkit-filter: drop-shadow(0px 0px 3px rgba(60, 60, 60, 0.7));
+
+}
+
+
+#sun {
+    padding-left: 150px;
+    padding-top: 20px;
+    -webkit-filter: drop-shadow(0px 0px 8px rgba(40, 40, 40, 0.7));
+
+}
+
+#windmill {
+    padding-left: 100px;
+    padding-top: 70px;
+    -webkit-filter: drop-shadow(0px 0px 3px rgba(60, 60, 60, 0.7));
+}
+
+
+
+
+
+
+#water:hover {
+    padding-left: 255px;
+    padding-top: 65px;
+    -webkit-filter: drop-shadow(0px 0px 3px rgba(255, 255, 255, 1));
+
+}
+
+
+#sun:hover {
+    padding-left: 150px;
+    padding-top: 20px;
+    -webkit-filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 1));
+
+}
+
+#windmill:hover {
+    padding-left: 100px;
+    padding-top: 70px;
+    -webkit-filter: drop-shadow(0px 0px 3px rgba(255, 255, 255, 1));
+
+}
+
+
+#mainContent {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    border-radius: 25px;
+    position: absolute;
+    left: 16%;
+    top: 9%;
+    width: 68%;
+
+}
+
+#mainContentTextTitle {
+    font-size: 200%;
+    text-align: center;
+
+}
+
+#mainContentText {
+    text-align: center;
+
+}
