@@ -1,8 +1,14 @@
-
-
 var arrayLength = mainProducts.length;
 var productAmmount = (arrayLength / 7);
+var MainDivElement;
 console.log(productAmmount);
+
+function init() {
+    MainDivElement = document.createElement('div');
+    MainDivElement.setAttribute("class", "MainProductDiv");
+    document.body.appendChild(MainDivElement);
+    parseArrayValues();
+}
 
 function parseArrayValues() {
 
@@ -17,7 +23,7 @@ function parseArrayValues() {
     var i;
     var loopCount = 0;
     for (i = 0; i < productAmmount; i++) {
-        if(loopCount == 0){
+        if (loopCount == 0) {
             var Name = mainProducts[0];
             var Desc = mainProducts[1];
             var Image = mainProducts[2];
@@ -25,14 +31,14 @@ function parseArrayValues() {
             var ImageHeight = mainProducts[4];
             var Price = mainProducts[5];
             var AddTxt = mainProducts[6];
-        }else{
-            var Name = mainProducts[loopCount*7];
-            var Desc = mainProducts[(loopCount*7)+1];
-            var Image = mainProducts[(loopCount*7)+2];
-            var ImageWidth = mainProducts[(loopCount*7)+3];
-            var ImageHeight = mainProducts[(loopCount*7)+4];
-            var Price = mainProducts[(loopCount*7)+5];
-            var AddTxt = mainProducts[(loopCount*7)+6];
+        } else {
+            var Name = mainProducts[loopCount * 7];
+            var Desc = mainProducts[(loopCount * 7) + 1];
+            var Image = mainProducts[(loopCount * 7) + 2];
+            var ImageWidth = mainProducts[(loopCount * 7) + 3];
+            var ImageHeight = mainProducts[(loopCount * 7) + 4];
+            var Price = mainProducts[(loopCount * 7) + 5];
+            var AddTxt = mainProducts[(loopCount * 7) + 6];
         }
 
         if (AddTxt == 0) {
@@ -69,35 +75,35 @@ function elementMaker(n, d, i, iw, ih, p, at) {
     console.log(p);
     console.log(at);
     var divElement = document.createElement('div');
-    divElement.setAttribute("id", "productDiv");
-    document.body.appendChild(divElement);
+    divElement.setAttribute("class", "productDiv");
+    MainDivElement.appendChild(divElement);
 
     var nameElement = document.createElement('p');
     nameElement.setAttribute("id", "productName");
     nameElement.innerHTML = n;
-    document.body.appendChild(nameElement);
+    divElement.appendChild(nameElement);
 
     var descElement = document.createElement('p');
     descElement.setAttribute("id", "productDesc");
     descElement.innerHTML = d;
-    document.body.appendChild(descElement);
+    divElement.appendChild(descElement);
 
 
     var imageElement = document.createElement("img");
     imageElement.id = "productImg";
-    imageElement.src = "../../img/productImages/testImage.png";
+    imageElement.src = "../../img/productImages/"+i;
     imageElement.width = iw;
     imageElement.height = ih;
-    document.body.appendChild(imageElement);
+    divElement.appendChild(imageElement);
 
     var priceElement = document.createElement('p');
     priceElement.setAttribute("id", "productPrice");
-    priceElement.innerHTML = "$" + p;
-    document.body.appendChild(priceElement);
+    priceElement.innerHTML = p;
+    divElement.appendChild(priceElement);
 
     var addTxtElement = document.createElement('p');
     addTxtElement.setAttribute("id", "productAddTxt");
     addTxtElement.innerHTML = at;
-    document.body.appendChild(addTxtElement);
+    divElement.appendChild(addTxtElement);
 
 }
