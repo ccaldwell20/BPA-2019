@@ -126,7 +126,21 @@ body {
     border-radius: 25px;
     position: absolute;
     left: 16%;
-    top: 20%;
+    top: 10%;
+    width: 68%;
+
+}
+
+#mainContentII {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    border-radius: 25px;
+    position: absolute;
+    left: 16%;
+    top: 30%;
     width: 68%;
 
 }
@@ -140,4 +154,8 @@ body {
 #mainContentText {
     text-align: center;
 
+}
+
+.tabbed{
+    text-indent: 2%;
 }
