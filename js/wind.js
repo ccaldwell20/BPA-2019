@@ -1,1 +1,2 @@
-var mainProducts = ["Windmill 1", "This is a test description.", "testImage.png", 150, 150, 1750, 0,"Windmill 2", "This is a test description.2", "testImage.png", 200, 200, 3655, 0]; 
+var mainProducts = ["Horizontal-Axis Turbine", "&nbsp", "turbine-h.jpeg", 150, 150, "$40,000 to $60,000 to install", 0,
+                    "Vertical-Axis Turbine", "&nbsp", "turbine-v.jpg", 150, 150, "$40,000 to $60,000 to install", 0]; 

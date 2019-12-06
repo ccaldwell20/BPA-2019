@@ -80,26 +80,31 @@ function elementMaker(n, d, i, iw, ih, p, at) {
 
     var nameElement = document.createElement('p');
     nameElement.setAttribute("id", "productName");
-    nameElement.innerHTML = n;
+    nameElement.innerHTML = "<b>" + n + "</b>";
     divElement.appendChild(nameElement);
-
-    var descElement = document.createElement('p');
-    descElement.setAttribute("id", "productDesc");
-    descElement.innerHTML = d;
-    divElement.appendChild(descElement);
-
 
     var imageElement = document.createElement("img");
     imageElement.id = "productImg";
-    imageElement.src = "../../img/productImages/"+i;
+    imageElement.alt = "productImg";
+    imageElement.src = "../../img/productImages/" + i;
     imageElement.width = iw;
     imageElement.height = ih;
     divElement.appendChild(imageElement);
+    
+    if (d != 0) {
 
+        var descElement = document.createElement('p');
+        descElement.setAttribute("id", "productDesc");
+        descElement.innerHTML = d;
+        divElement.appendChild(descElement);
+    }
+    
+    if (p != null) {
     var priceElement = document.createElement('p');
     priceElement.setAttribute("id", "productPrice");
     priceElement.innerHTML = p;
     divElement.appendChild(priceElement);
+    }
 
     var addTxtElement = document.createElement('p');
     addTxtElement.setAttribute("id", "productAddTxt");
